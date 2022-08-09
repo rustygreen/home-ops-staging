@@ -15,19 +15,7 @@ spec:
         kind: HelmRepository
         name: longhorn
         namespace: flux-system
-  install:
-    createNamespace: true
-    remediation:
-      retries: 3
-  upgrade:
-    remediation:
-      retries: 3
   values:
-    # csi:
-    #   attacherReplicaCount: 1
-    #   provisionerReplicaCount: 1
-    #   resizerReplicaCount: 1
-    #   snapshotterReplicaCount: 1
     defaultSettings:
       defaultLonghornStaticStorageClass: longhorn
       defaultDataPath: /mnt/storage
