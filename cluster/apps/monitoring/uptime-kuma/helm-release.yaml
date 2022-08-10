@@ -7,7 +7,7 @@ metadata:
 spec:
   dependsOn:
     - name: longhorn
-      namespace: longhorn-system
+      namespace: storage
     - name: ingress-nginx
       namespace: networking
   maxHistory: 3

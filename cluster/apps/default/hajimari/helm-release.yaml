@@ -15,13 +15,6 @@ spec:
         name: hajimari
         namespace: flux-system
       interval: 15m
-  install:
-    createNamespace: true
-    remediation:
-      retries: 5
-  upgrade:
-    remediation:
-      retries: 5
   values:
     image:
       repository: ghcr.io/toboshii/hajimari
@@ -33,7 +26,7 @@ spec:
         matchNames:
           - default
           - networking
-          - longhorn-system
+          - storage
           - monitoring
       name: "Rusty"
       customApps:

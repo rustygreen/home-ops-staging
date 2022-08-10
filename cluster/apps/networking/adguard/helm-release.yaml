@@ -16,6 +16,9 @@ spec:
         name: k8s-at-home
         namespace: flux-system
       interval: 15m
+  dependsOn:
+    - name: longhorn
+      namespace: storage
   values:
     env:
       TZ: ${TIMEZONE}
