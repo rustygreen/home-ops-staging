@@ -7,5 +7,4 @@ resources:
   - networking
   - storage
   - monitoring
-  - system-upgrade
   - default
