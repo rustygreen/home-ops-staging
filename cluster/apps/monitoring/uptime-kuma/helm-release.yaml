@@ -8,8 +8,8 @@ spec:
   dependsOn:
     - name: longhorn
       namespace: storage
-    - name: ingress-nginx
-      namespace: networking
+    # - name: ingress-nginx
+    #   namespace: networking
   maxHistory: 3
   interval: 10m0s
   suspend: false
