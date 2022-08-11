@@ -14,3 +14,5 @@ resources:
   - metrics-server.yaml
   - stakater.yaml
   - weaveworks-kured.yaml
+  - zalando-postgres-operator.yaml
+  - zalando-postgres-ui.yaml
